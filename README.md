@@ -2,7 +2,7 @@
 
 <img width="1075" alt="todo-list" src="https://user-images.githubusercontent.com/109073797/183377210-10c01b1d-11c0-4a0c-bdc8-c6f2e74c6c27.png">
 
-아이템을 추가,제거하고, 상태별로 볼 수 있습니다.
+아이템을 추가,제거하고 상태별로 볼 수 있습니다.
 
 [데모] (https://nayul-todo-list.netlify.app/)
 

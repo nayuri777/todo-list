@@ -4,7 +4,7 @@
 
 아이템을 추가,제거하고 상태별로 볼 수 있습니다.
 
-[데모] (https://nayul-todo-list.netlify.app/){: target="_blank"}
+[데모] <https://nayul-todo-list.netlify.app/>{: target="_blank"}
 
 
 ## 기능

@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    color:#000;
+    text-decoration:none;
+}
+
+button{
+    background:none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    width:30px;
+    height:30px;
+    font-size:25px;
+    color:#333;
+
+}
+
+#btn-save{
+    color:#9333e9;
+    vertical-align: middle;
+}
+
+
+body, html{
+    font-family: 'Noto Serif KR', serif;
+    height:100%;
+    
+}
+
+body{
+    /* background: linear-gradient(to bottom right, #93b6ff, #8c67ff); */
+    background:#ad66ee;
+    color:#000;
+}
+
+.tit{
+    padding:20px;
+    color:#1e1e1e;
+    font-size:50px;
+}
+
+.container {
+    width:1000px;
+    height:1000px;
+    margin:0 auto;
+    overflow:hidden;
+    overflow-y: auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    padding:30px;
+    transform: translate(-50%, -50%);
+    background:rgba(225,225,225,0.7);
+}
+
+.input-area{
+    padding:20px 0;
+}
+
+#user-input{
+    padding:10px;
+    width:300px;
+    font-size:20px;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid #fff;
+    color:#333;
+}
+
+#user-input:focus{
+    outline:none;
+}
+
+.task-tab{
+    padding:20px 0;
+}
+
+
+.task-tab ul{
+    display:flex;
+    justify-content:space-around;
+    position:relative;
+    width:600px;
+    
+}
+
+.task-tab #under-line{
+    position:absolute;
+    background: #ad66ee;
+    top:35px;
+    left:68px;
+    width:48px;
+    height:5px;
+    transition:.5s;
+}
+
+
+.task-tab ul li a{
+    font-size:25px;
+    display:block;
+    color:#333;
+}
+
+
+#task-list{
+    color:#fff;
+}
+
+#task-list section{
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    transition:.2s;
+    padding-top:20px;
+    border-bottom:1px solid #eee;
+}
+
+
+#task-list section:hover{
+    background:#e6e6e6;
+    
+}
+
+#task-list section span{
+    font-size:20px;
+    word-break: break-all;
+    max-width:800px;
+    color:#333;
+}
+
+
+.done{
+    text-decoration: line-through;
+
+}
+
+@media(max-width:1000px) {
+    .container{
+        width:100%;
+        height:100vh;
+        padding:0;
+    }
+    .tit{
+        font-size:30px;
+    }
+    
+    .task{
+        padding:0 15px;
+    }
+
+    .task-tab ul{
+        width:100%;
+    }
+
+    .input-area{
+        text-align:center;
+        padding:10px 0
+    }
+
+    .task-tab ul li a{
+        font-size:20px;
+    }
+
+    #task-list section span{
+        font-size:18px;
+    }
+}
